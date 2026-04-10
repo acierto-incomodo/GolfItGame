@@ -20,8 +20,8 @@ VERSION_URL = "https://github.com/acierto-incomodo/GolfItGame/releases/latest/do
 RELEASE_NOTES_URL = "https://github.com/acierto-incomodo/GolfItGame/releases/latest/download/ReleaseNotes.txt"
 URL_7ZR = "https://github.com/acierto-incomodo/GolfItGame/releases/latest/download/7zr.exe"
 
-EXE_NAME_WIN   = "Build/GolfIt.exe"
-EXE_NAME_LINUX = "Build/GolfIt.exe"
+EXE_NAME_WIN   = "Build/GolfItLauncher.exe.exe"
+EXE_NAME_LINUX = "Build/GolfItLauncher.exe.exe"
 
 DOWNLOAD_DIR = Path.cwd() / "downloads"
 GAME_DIR     = Path.cwd() / "game"

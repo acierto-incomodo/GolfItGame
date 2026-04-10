@@ -18,12 +18,12 @@ DisableDirPage=yes
 
 [Files]
 Source: "C:\Users\melio\Documents\GitHub\GolfItGame\dist\installer_updater.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\melio\Documents\GitHub\GolfItGame\golfitico"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\melio\Documents\GitHub\GolfItGame\golfitpng"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\melio\Documents\GitHub\GolfItGame\golfit.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\melio\Documents\GitHub\GolfItGame\golfit.png"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
-Name: "{commonprograms}\StormGamesStudios\Golf It"; Filename: "{app}\installer_updater.exe"; IconFilename: "{app}\golfitico"; Comment: "Lanzador de Golf It"; WorkingDir: "{app}"
-Name: "{commonprograms}\StormGamesStudios\Desinstalar Golf It"; Filename: "{uninstallexe}"; IconFilename: "{app}\golfitico"; Comment: "Desinstalar Golf It"
+Name: "{commonprograms}\StormGamesStudios\Golf It"; Filename: "{app}\installer_updater.exe"; IconFilename: "{app}\golfit.ico"; Comment: "Lanzador de Golf It"; WorkingDir: "{app}"
+Name: "{commonprograms}\StormGamesStudios\Desinstalar Golf It"; Filename: "{uninstallexe}"; IconFilename: "{app}\golfit.ico"; Comment: "Desinstalar Golf It"
 
 [Registry]
 Root: HKCU; Subkey: "Software\Golf It"; ValueType: string; ValueName: "Install_Dir"; ValueData: "{app}"
@@ -113,7 +113,8 @@ begin
   Exec('taskkill', '/F /IM installer_updater.exe', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
   Exec('taskkill', '/F /IM win_launcher.exe', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
   Exec('taskkill', '/F /IM "GolfIt.exe"', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
-  Exec('taskkill', '/F /IM ""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+  Exec('taskkill', '/F /IM "GolfItLauncher.exe"', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+  Exec('taskkill', '/F /IM "GolfIt-Win64-Shipping.exe"', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
 end;
 
 procedure CurStepChanged(CurStep: TSetupStep);
