@@ -3,5 +3,5 @@ Cambios
 Launcher (v1.0.2):
 - NaN
 
-Juego (v1.0.0):
-- NaN
+Juego (v1.1.0.9 OnlineFixed):
+- Juego compatible con Steam Multiplayer.
