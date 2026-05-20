@@ -4,4 +4,4 @@ python -m PyInstaller --onefile --windowed --noconsole --icon=golfit.ico launche
 python -m PyInstaller --onefile --windowed --noconsole --icon=golfit.ico installer_updater.py
 python -m PyInstaller --onefile --windowed --noconsole --name="GolfItLauncher" --icon=golfit.ico launch_game.py
 echo 1.0.2 > version_win_launcher.txt
-echo "v1.1.0.9 OnlineFixed" > Version.txt
+echo "v1.1.0.9 OnlineFixed Mod" > Version.txt
